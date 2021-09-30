@@ -1,0 +1,10 @@
+li = [1,11,111,1111,2,22,222,2222,3,33,333,3333,4,44,444,4444,5,55,555,5555,6,66,666,6666,7,77,777,7777,8,88,888,8888,9,99,999,9999]
+num = int(input())
+for i in range(num):
+    n = int(input())
+    i = 0
+    count = 0
+    while not li[i] == n:
+        count += len(str(li[i]))
+        i += 1
+    print(count+len(str(li[i])))
